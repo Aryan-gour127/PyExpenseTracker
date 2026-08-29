@@ -180,13 +180,13 @@ Choose an option and manage your expenses directly from the terminal. 💻✨
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/Aryan-gour127/PyExpenseTracker
 ```
 
 ### 2️⃣ Open the project
 
 ```bash
-cd Expense-li
+cd PyExpenseTrackers
 ```
 
 ### 3️⃣ Run the program
