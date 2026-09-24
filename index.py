@@ -214,7 +214,7 @@ while True :
     print("5. Delete Expense")
     print("=======================")
 
-    ExpenseTask = int(input("select task (1{1},2{2},3{3},4{4},5{5}):  "))
+    ExpenseTask = int(input("select task (1{1},2{2},3{3},4{4},5{5}),6{6}:  "))
 
     if ExpenseTask == 1:
         AddExpenses()
@@ -231,6 +231,9 @@ while True :
     elif ExpenseTask == 5:
         DeleteExpense()
 
+    elif SaveData == 6:
+        SaveData()
+        
     else :
         print("Invalid Task!!")
         break
