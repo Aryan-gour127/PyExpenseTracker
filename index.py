@@ -1,4 +1,15 @@
+import json
+
 Expenses = []
+
+def SaveData():
+
+    Exp = {
+        'Expenses': Expenses
+    }
+
+    with open("Data/data_Expense.json", 'w') as file:
+        json.dump(Exp,file,indent=4)
 
 def AddExpenses():
 
@@ -194,14 +205,19 @@ while True :
 
     if ExpenseTask == 1:
         AddExpenses()
+
     elif ExpenseTask == 2:
         ViewExpenses()
+
     elif ExpenseTask == 3:
         SearchExpenses()
+
     elif ExpenseTask == 4:
         UpdateExpenses()
+        
     elif ExpenseTask == 5:
         DeleteExpense()
+
     else :
         print("Invalid Task!!")
         break
