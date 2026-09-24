@@ -11,6 +11,19 @@ def SaveData():
     with open("Data/data_Expense.json", 'w') as file:
         json.dump(Exp,file,indent=4)
 
+def loadDate():
+
+    global Expenses
+
+    try:
+        with open("Date/date_Expense.json", 'r') as file:
+            data = json.load(file)
+
+            Expenses = data.get("Expenses", [])
+            print("Date Loaded Sucessfully!")
+
+    except FileNotFoundError:
+        print("No previous data found. STARTING FRESH !")
 def AddExpenses():
 
     title = input("Expense for (breakfat/lunch/dinner/etc) :")
